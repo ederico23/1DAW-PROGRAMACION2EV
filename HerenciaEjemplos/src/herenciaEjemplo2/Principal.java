@@ -5,7 +5,7 @@ public class Principal {
 	public static void main(String[] args) {
 
 		Animal a1 = new Vaca();
-		System.out.println(a1.sonido());//NO VA
+		System.out.println(a1.sonido());
 		
 		Animal[] listaAnimales = new Animal[10];
 		

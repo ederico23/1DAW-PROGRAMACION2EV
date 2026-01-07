@@ -17,7 +17,7 @@ public class Mago extends Personaje{
 	
 	@Override
 	public String atacar() {
-		return "Mago " + this.getNombre()+ " ataca con un hechizo";
+		return "Mago " + this.getNombre()+ " ataca con un hechizo y gasta " + mana + " de mana";
 	}
 	
 }
