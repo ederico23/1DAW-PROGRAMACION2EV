@@ -1,4 +1,4 @@
-package formasGeometricas;
+package ejercicio2;
 
 public class Rectangulo extends Figura {
 	/**

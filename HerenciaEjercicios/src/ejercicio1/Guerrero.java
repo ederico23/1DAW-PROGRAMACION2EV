@@ -1,4 +1,4 @@
-package personajesFantasia;
+package ejercicio1;
 /**
  * subclase guerrero
  */

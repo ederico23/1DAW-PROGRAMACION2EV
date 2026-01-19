@@ -1,4 +1,4 @@
-package personajesFantasia;
+package ejercicio1;
 /**
  * main de los personajes de fantasia
  * @author ederg
