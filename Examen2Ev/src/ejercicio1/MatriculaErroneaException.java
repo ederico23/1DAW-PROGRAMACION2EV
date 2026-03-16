@@ -5,8 +5,8 @@ public class MatriculaErroneaException extends IllegalArgumentException{
 	/**
 	 * 
 	 */
-	public MatriculaErroneaException() {
-		super();
+	public MatriculaErroneaException(String matriculaFalsa) {
+		super("La matricula " + matriculaFalsa + " no es valida");
 	}
 
 	
