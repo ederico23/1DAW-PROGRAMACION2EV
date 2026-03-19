@@ -9,7 +9,7 @@ public class Main {
 		String marca = Leer.leerFrase("dime la marca del coche");
 		String color = Leer.leerFrase("dime el color del coche");
 		String matricula = Leer.leerFrase("dime la matricula del coche");
-		
+		//meterlo en un do while con un contador
 		try {
 			v1 = new Vehiculo(marca, color, matricula);
 		} catch (MatriculaErroneaException e) {

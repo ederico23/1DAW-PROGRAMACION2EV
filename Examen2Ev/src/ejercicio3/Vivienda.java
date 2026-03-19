@@ -5,8 +5,8 @@ public abstract class Vivienda implements Valorable{
 	private String direccion;
 	private double superficie;
 	private int habitaciones;
-	private double precioMetro2;
-	private double precioBase;
+	private static double precioMetro2 = 110;
+
 	
 	/**
 	 * @param direccion
@@ -76,19 +76,6 @@ public abstract class Vivienda implements Valorable{
 		this.precioMetro2 = precioMetro2;
 	}
 
-	/**
-	 * @return the precioBase
-	 */
-	public double getPrecioBase() {
-		return precioBase;
-	}
-
-	/**
-	 * @param precioBase the precioBase to set
-	 */
-	public void setPrecioBase(double precioBase) {
-		this.precioBase = precioBase;
-	}
 	
 	
 	
