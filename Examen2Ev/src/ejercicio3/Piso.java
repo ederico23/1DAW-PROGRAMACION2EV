@@ -1,22 +1,31 @@
 package ejercicio3;
 
-public class Piso extends Vivienda implements Valorable{
-
+public class Piso extends Vivienda{
+	
 	private int altura;
-	private boolean ascensor;
-	private double plusAltura = 0.01;
+    private boolean ascensor;
 	
-	public Piso(String direccion, double superficie, int habitaciones) {
-		super(direccion, superficie, habitaciones);
-		// TODO Auto-generated constructor stub
-	}
+    public Piso(String direccion, int superficie, int habitaciones, int altura, boolean ascensor) {
+        super(direccion, superficie, habitaciones);
+        this.altura = altura;
+        this.ascensor = ascensor;
+    }
 	
-	@Override
-	public double calcularPrecio() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    @Override
+    public double calcularPrecio() {
+        double base = getSuperficie() * getPrecioMetroCuadrado();
+        return base + (base * (altura * 0.01));
+    }
 	
-	
+    @Override
+    public String toString() {
+        return "Vivienda Tipo: Piso\nDirección: " + getDireccion() + 
+        		"\nHabitaciones: " + getHabitaciones() +
+               "\nSuperficie: " + getSuperficie() + 
+               "\nAltura: " + altura + 
+               "\nAscensor: " + (ascensor ? "Si" : "No") +
+               "\nPrecio: " + calcularPrecio();
+    }
+    
 	
 }

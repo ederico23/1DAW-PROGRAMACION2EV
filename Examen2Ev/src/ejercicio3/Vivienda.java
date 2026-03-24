@@ -3,21 +3,28 @@ package ejercicio3;
 public abstract class Vivienda implements Valorable{
 	
 	private String direccion;
-	private double superficie;
-	private int habitaciones;
-	private static double precioMetro2 = 110;
+    private int superficie;
+    private int habitaciones;
+    private static double precioMetroCuadrado = 1500.0;
+    
+    public Vivienda(String direccion, int superficie, int habitaciones) {
+        this.direccion = direccion;
+        this.superficie = superficie;
+        this.habitaciones = habitaciones;
+    }
 
-	
 	/**
-	 * @param direccion
-	 * @param superficie
-	 * @param habitaciones
+	 * @return the precioMetroCuadrado
 	 */
-	public Vivienda(String direccion, double superficie, int habitaciones) {
-		super();
-		this.direccion = direccion;
-		this.superficie = superficie;
-		this.habitaciones = habitaciones;
+	public static double getPrecioMetroCuadrado() {
+		return precioMetroCuadrado;
+	}
+
+	/**
+	 * @param precioMetroCuadrado the precioMetroCuadrado to set
+	 */
+	public static void setPrecioMetroCuadrado(double precioMetroCuadrado) {
+		Vivienda.precioMetroCuadrado = precioMetroCuadrado;
 	}
 
 	/**
@@ -28,24 +35,10 @@ public abstract class Vivienda implements Valorable{
 	}
 
 	/**
-	 * @param direccion the direccion to set
-	 */
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
-	}
-
-	/**
 	 * @return the superficie
 	 */
-	public double getSuperficie() {
+	public int getSuperficie() {
 		return superficie;
-	}
-
-	/**
-	 * @param superficie the superficie to set
-	 */
-	public void setSuperficie(double superficie) {
-		this.superficie = superficie;
 	}
 
 	/**
@@ -55,27 +48,8 @@ public abstract class Vivienda implements Valorable{
 		return habitaciones;
 	}
 
-	/**
-	 * @param habitaciones the habitaciones to set
-	 */
-	public void setHabitaciones(int habitaciones) {
-		this.habitaciones = habitaciones;
-	}
-
-	/**
-	 * @return the precioMetro2
-	 */
-	public double getPrecioMetro2() {
-		return precioMetro2;
-	}
-
-	/**
-	 * @param precioMetro2 the precioMetro2 to set
-	 */
-	public void setPrecioMetro2(double precioMetro2) {
-		this.precioMetro2 = precioMetro2;
-	}
-
+	
+	
 	
 	
 	
