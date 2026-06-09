@@ -68,7 +68,7 @@ public abstract class Mascota {
 
 	@Override
 	public String toString() {
-		return "nombre: " + nombre + "| edad " + edad + " años | peso " + peso + " kg";
+		return "nombre: " + nombre + "| edad " + edad + " años | peso " + peso + " kg\n";
 	}   
 	
 	

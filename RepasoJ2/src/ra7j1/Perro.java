@@ -4,14 +4,16 @@ public class Perro extends Mascota implements Asegurable{
 
 	private String raza;
 	private boolean isPeligroso;
-	
-	
+		
 	/**
+	 * @param nombre
+	 * @param edad
+	 * @param peso
 	 * @param raza
 	 * @param isPeligroso
 	 */
-	public Perro(String raza, boolean isPeligroso) {
-		super();
+	public Perro(String nombre, Integer edad, Double peso, String raza, boolean isPeligroso) {
+		super(nombre, edad, peso);
 		this.raza = raza;
 		this.isPeligroso = isPeligroso;
 	}
@@ -54,7 +56,7 @@ public class Perro extends Mascota implements Asegurable{
 
 	@Override
 	public String hacerSonido() {
-		return "Guau";
+		return "El perro hace guau";
 	}
 	
 	
