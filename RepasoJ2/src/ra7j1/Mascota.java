@@ -17,6 +17,16 @@ public abstract class Mascota {
 		this.peso = peso;
 	}
 	
+	private static double precioBase = 100.0;
+	
+	public static double getPrecioBase() {
+		return precioBase;
+	}
+
+	public static void setPrecioBase (double precio ) {
+		precioBase = precio;
+	}
+	
 	/**
 	 * @return the nombre
 	 */
@@ -53,6 +63,13 @@ public abstract class Mascota {
 	public void setPeso(Double peso) {
 		this.peso = peso;
 	}
+	
+	public abstract String hacerSonido();
+
+	@Override
+	public String toString() {
+		return "nombre: " + nombre + "| edad " + edad + " años | peso " + peso + " kg";
+	}   
 	
 	
 	
