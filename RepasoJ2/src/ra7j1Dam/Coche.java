@@ -15,9 +15,9 @@ public class Coche extends Vehiculo implements Asegurable{
 
 	@Override
 	public double calcularSeguro() {
-		seguro = seguro * 0.3;
+		seguro = seguro * 1.3;
 		if(isElectrico = true) {
-			seguro = seguro /0.15;
+			seguro = seguro * 0.85;
 		}
 		return seguro;
 	}

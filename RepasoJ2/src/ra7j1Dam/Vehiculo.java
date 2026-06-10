@@ -1,6 +1,6 @@
 package ra7j1Dam;
 
-public abstract class Vehiculo {
+public abstract class Vehiculo implements Asegurable{
 	
 	private String matricula;
 	private String marca;
@@ -60,6 +60,7 @@ public abstract class Vehiculo {
 	}
 	
 	public abstract String hacerSonido();
+	
 
 	@Override
 	public String toString() {

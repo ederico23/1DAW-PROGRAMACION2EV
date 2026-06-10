@@ -17,7 +17,7 @@ public class Moto extends Vehiculo implements Asegurable {
 	@Override
 	public double calcularSeguro() {
 		if (tieneCarnet = true) {
-			seguro = seguro * 0.2;
+			seguro = seguro * 1.2;
 		} else {
 			seguro = seguro * 3;
 		}

@@ -15,12 +15,18 @@ public class Camion extends Vehiculo implements Asegurable{
 
 	@Override
 	public double calcularSeguro() {
-		seguro = seguro * 1.4;
-		
-		seguro = seguro + seguro*(numEjes-2)*0.1;
-		
-		return seguro;
+	    // Empezamos con el precio base + 40% (1.40)
+	    double total = seguro * 1.40; 
+	    
+	    // Si tiene más de 2 ejes, sumamos un 10% del precio base por cada uno
+	    if (numEjes > 2) {
+	        int ejesExtras = numEjes - 2;
+	        total += ejesExtras * (seguro * 0.10);
+	    }
+	    
+	    return total;
 	}
+
 	@Override
 	public String hacerSonido() {
 		return SONIDO;
